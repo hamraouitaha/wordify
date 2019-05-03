@@ -1,16 +1,7 @@
- <div class="col-md-12 col-lg-4 sidebar">
-              <div class="sidebar-box search-form-wrap">
-                <form action="#" class="search-form">
-                  <div class="form-group">
-                    <span class="icon fa fa-search"></span>
-                    <input type="text" class="form-control" id="s" placeholder="Type a keyword and hit enter">
-                  </div>
-                </form>
-              </div>
-              <!-- END sidebar-box -->
+ <!-- END sidebar-box -->
               <div class="sidebar-box">
                 <div class="bio text-center">
-                  <img src="images/person_1.jpg" alt="Image Placeholder" class="img-fluid">
+                  <img src="<?php bloginfo('template_directory'); ?>/images/person_1.jpg" alt="Image Placeholder" class="img-fluid">
                   <div class="bio-body">
                     <h2>David Craig</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facilis sunt repellendus excepturi beatae porro debitis voluptate nulla quo veniam fuga sit molestias minus.</p>
@@ -31,7 +22,7 @@
                   <ul>
                     <li>
                       <a href="">
-                        <img src="images/img_2.jpg" alt="Image placeholder" class="mr-4">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img_2.jpg" alt="Image placeholder" class="mr-4">
                         <div class="text">
                           <h4>How to Find the Video Games of Your Youth</h4>
                           <div class="post-meta">
@@ -42,7 +33,7 @@
                     </li>
                     <li>
                       <a href="">
-                        <img src="images/img_4.jpg" alt="Image placeholder" class="mr-4">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img_4.jpg" alt="Image placeholder" class="mr-4">
                         <div class="text">
                           <h4>How to Find the Video Games of Your Youth</h4>
                           <div class="post-meta">
@@ -53,7 +44,7 @@
                     </li>
                     <li>
                       <a href="">
-                        <img src="images/img_12.jpg" alt="Image placeholder" class="mr-4">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/img_12.jpg" alt="Image placeholder" class="mr-4">
                         <div class="text">
                           <h4>How to Find the Video Games of Your Youth</h4>
                           <div class="post-meta">
