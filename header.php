@@ -1,23 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Colorlib Wordify &mdash; Minimal Blog Template</title>
+    <title><?php echo get_bloginfo( 'name' ); ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300, 400,700|Inconsolata:400,700" rel="stylesheet">
 
-    <link href="<?php bloginfo('template_directory');?>/css/bootstrap.css" rel="stylesheet">
-      <link href="<?php bloginfo('template_directory');?>/css/animate.css"  rel="stylesheet">
-      <link href="<?php bloginfo('template_directory');?>/css/owl.carousel.min.css"   rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/animate.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/owl.carousel.min.css">
 
-   <link href="<?php bloginfo('template_directory');?>/fonts/ionicons/css/ionicons.min.css"   rel="stylesheet">
-       <link href="<?php bloginfo('template_directory');?>/fonts/fontawesome/css/font-awesome.min.css"   rel="stylesheet">
-   <link href="<?php bloginfo('template_directory');?>/fonts/flaticon/font/flaticon.css"   rel="stylesheet">
-   
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/fonts/flaticon/font/flaticon.css">
 
     <!-- Theme Style -->
-     <link href="<?php bloginfo('template_directory');?>/css/style.css"rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/style.css">
   </head>
   <body>
     
@@ -49,7 +48,7 @@
           <div class="row pt-5">
             <div class="col-12 text-center">
               <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
-              <h1 class="site-logo"><a href="index.html">Wordify</a></h1>
+              <h1 class="site-logo"><a href="<?php get_bloginfo('wpurl');?>"> Location voiture</a></h1>
             </div>
           </div>
         </div>
@@ -61,109 +60,30 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Business</a>
+                  <a class="nav-link active" href="<?php get_bloginfo('wpurl');?>">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="category.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
+                  <a class="nav-link dropdown-toggle" href="category.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departement</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown04">
-                    <a class="dropdown-item" href="category.html">Asia</a>
-                    <a class="dropdown-item" href="category.html">Europe</a>
-                    <a class="dropdown-item" href="category.html">Dubai</a>
-                    <a class="dropdown-item" href="category.html">Africa</a>
-                    <a class="dropdown-item" href="category.html">South America</a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">tecnologie de l'informatique </a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Génie logiciel </a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Génie electrique </a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Génie Civil </a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Administarion des afaires</a>
                   </div>
-
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="category.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown05">
-                    <a class="dropdown-item" href="category.html">Lifestyle</a>
-                    <a class="dropdown-item" href="category.html">Food</a>
-                    <a class="dropdown-item" href="category.html">Adventure</a>
-                    <a class="dropdown-item" href="category.html">Travel</a>
-                    <a class="dropdown-item" href="category.html">Business</a>
-                  </div>
-
+ 
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="<?php bloginfo('template_directory');?>/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="<?php bloginfo('template_directory');?>/contact.php">Contact</a>
                 </li>
               </ul>
               
             </div>
           </div>
         </nav>
+    <?php wp_head();?>
       </header>
-      <!-- END header -->
-
-      <section class="site-section pt-5 pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-
-              <div class="owl-carousel owl-theme home-slider">
-                <div>
-                  <a href="<?php bloginfo('template_directory');?>/blog-single.html" class="a-block d-flex align-items-center height-lg" style="background-image: url('images/img_1.jpg'); ">
-                    <div class="text half-to-full">
-                      <span class="category mb-5">Food</span>
-                      <div class="post-meta">
-                        
-                        <span class="author mr-2"><img src="<?php bloginfo('template_directory'); ?>/images/person_1.jpg" alt="Colorlib"> Colorlib</span>&bullet;
-                        <span class="mr-2">March 15, 2018 </span> &bullet;
-                        <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
-                        
-                      </div>
-                      <h3>How to Find the Video Games of Your Youth</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta eaque ipsa laudantium!</p>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="<?php bloginfo('template_directory');?>/blog-single.html" class="a-block d-flex align-items-center height-lg" style="background-image: url('images/img_2.jpg'); ">
-                    <div class="text half-to-full">
-                      <span class="category mb-5">Travel</span>
-                      <div class="post-meta">
-                        
-                        <span class="author mr-2"><img src="<?php bloginfo('template_directory'); ?>/images/person_1.jpg" alt="Colorlib"> Colorlib</span>&bullet;
-                        <span class="mr-2">March 15, 2018 </span> &bullet;
-                        <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
-                        
-                      </div>
-                      <h3>How to Find the Video Games of Your Youth</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta eaque ipsa laudantium!</p>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="<?php bloginfo('template_directory');?>/blog-single.html" class="a-block d-flex align-items-center height-lg" style="background-image: url('images/img_3.jpg'); ">
-                    <div class="text half-to-full">
-                      <span class="category mb-5">Sports</span>
-                      <div class="post-meta">
-                        
-                        <span class="author mr-2"><img src="<?php bloginfo('template_directory'); ?>/images/person_1.jpg" alt="Colorlib"> Colorlib</span>&bullet;
-                        <span class="mr-2">March 15, 2018 </span> &bullet;
-                        <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
-                        
-                      </div>
-                      <h3>How to Find the Video Games of Your Youth</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta eaque ipsa laudantium!</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          
-        </div>
-
-
-      </section>
-      <!-- END section -->
+   
