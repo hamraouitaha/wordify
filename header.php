@@ -65,7 +65,7 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="category.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégorie</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown04">
-                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">cCatégorie</a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Catégorie</a>
                     <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php"> Modéle</a>
                     <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Marque </a>
                     <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">année</a>
