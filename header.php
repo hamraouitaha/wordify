@@ -48,7 +48,7 @@
           <div class="row pt-5">
             <div class="col-12 text-center">
               <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
-              <h1 class="site-logo"><a href="<?php get_bloginfo('wpurl');?>"> Location voiture</a></h1>
+              <h1 class="site-logo"><a href="<?php get_bloginfo('wpurl');?>">location voiture</a></h1>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
           <div class="container">
             
            
-            <div class="collapse navbar-collapse" id="navbarMenu">
+              <div class="collapse navbar-collapse" id="navbarMenu">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a class="nav-link active" href="<?php get_bloginfo('wpurl');?>">Home</a>
@@ -66,12 +66,11 @@
                   <a class="nav-link dropdown-toggle" href="category.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégorie</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown04">
                     <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Catégorie</a>
-                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php"> Modéle</a>
+                    <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Modéle</a>
                     <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">Marque </a>
                     <a class="dropdown-item" href="<?php bloginfo('template_directory');?>/category.php">année</a>
                     
                   </div>
-
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="<?php bloginfo('template_directory');?>/about.php">About</a>
@@ -86,4 +85,3 @@
         </nav>
     <?php wp_head();?>
       </header>
-   
